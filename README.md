@@ -20,4 +20,27 @@ Tables MySQL :
 - articles_sensibilisation: ID,titre,contenu,liens,image
 - contact_messages: ID, utilisateur_id, message, email, phone, subject, created_at, name
 - ressources_à_consulter: ID, type, titre, url, description, image_url
-- specialistes: ID, nom, specialite, email, telephone, adresse, image
+- specialistes: ID, nom, specialite, email, telephone, adresse, image.
+
+Etapes de projet :
+
+1. Préparation
+  - Installer XAMPP (pour PHP et MySQL).
+  - Configurer VS Code pour écrire du code.
+  - Créer une base de données appelée projet_web avec les tables nécessaires.
+
+2. Backend (PHP & MySQL)
+  - Connexion à la base de données :
+    Créer un fichier connect.php pour se connecter à MYSQL.
+
+3. Frontend (HTML, CSS, JS)
+  Créer les pages principales :
+  - Accueil : Présentation simple du site.
+  - C’est quoi l’autisme ? : Afficher dynamiquement des articles.
+  - Ressources : Liste des ressources éducatives.
+  - Contact : Formulaire pour poser des questions + liste des spécialistes.
+Utiliser CSS pour un design propre.
+  Ajouter des effets de base avec JavaScript.
+
+4. Tests
+Vérifier chaque fonctionnalité (connexion, affichage dynamique, formulaire de contact).
