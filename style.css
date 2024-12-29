@@ -1,0 +1,247 @@
+    /* Style général de la page */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+    
+    /* Barre de navigation */
+    header {
+        background-color: #003366;
+        padding: 10px;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+    
+    nav ul li {
+        margin: 0 15px;
+    }
+    
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        transition: color 0.3s;
+    }
+    
+    nav ul li a:hover {
+        color: #f4f4f4;
+    }
+    
+    /* Conteneur pour "Hello" et logout */
+    .user-info {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 20px;
+    }
+    
+    .user-info .welcome-message {
+        font-size: 1.2em;
+        color: white;
+    }
+    
+    .logout-button {
+        background-color: white;
+        color: #003366;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        text-decoration: none;
+        transition: background-color 0.3s;
+    }
+    
+    .logout-button:hover {
+        background-color: #f0f0f0;
+    }
+    
+    /* Section de bienvenue */
+    .hero {
+        background-image: url('autism.png'); /* Remplacez par le chemin de votre image */
+        background-size: cover; /* Pour couvrir toute la section */
+        background-position: center; /* Centrer l'image */
+        background-repeat: no-repeat; /* Ne pas répéter l'image */
+        color: white;
+        padding: 100px 20px;
+        text-align: center;
+    }
+    
+    .hero .welcome-box {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    
+    .hero h1 {
+        font-size: 3em;
+    }
+    
+    .hero p {
+        font-size: 1.2em;
+        margin-bottom: 20px;
+    }
+    
+    .hero button {
+        background-color: #fff;
+        color: #003366;
+        font-size: 1.2em;
+        padding: 15px 30px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .hero button:hover {
+        background-color: #f0f0f0;
+    }
+    .transparent-box {
+        background-color: rgba(255, 255, 255, 0.8); /* Fond blanc transparent */
+        padding: 30px;
+        border-radius: 10px; /* Coins arrondis */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Ombre pour un effet élégant */
+    }
+    
+    .transparent-box h1 {
+        font-size: 2.5em;
+        color: #003366; /* Couleur du texte pour le contraste */
+    }
+    
+    .transparent-box p {
+        font-size: 1.2em;
+        margin-bottom: 20px;
+        color: #003366; /* Couleur du texte pour le contraste */
+    }
+    
+    .transparent-box button {
+        background-color: #003366;
+        color: white;
+        font-size: 1.2em;
+        padding: 15px 30px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    .transparent-box button:hover {
+        background-color: #0056b3;
+    }
+    
+    /* Section des blocs */
+    .sections {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin: 20px;
+            }
+    
+            .section-box {
+                background-color: white;
+                border: 1px solid #ccc;
+                border-radius: 10px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                margin: 10px;
+                padding: 20px;
+                text-align: center;
+                flex: 1 1 300px;
+                max-width: 300px;
+                transition: transform 0.3s;
+            }
+    
+            .section-box:hover {
+                transform: translateY(-5px);
+            }
+    
+            .section-box img {
+                max-width: 100px;
+                margin-bottom: 20px;
+            }
+    
+            .section-box h3 {
+                font-size: 1.5em;
+                margin-bottom: 10px;
+            }
+    
+            .section-box p {
+                font-size: 1em;
+                margin-bottom: 20px;
+            }
+    
+            .section-box a {
+                display: inline-block;
+                background-color: #003366; /* Bleu */
+                color: white;
+                padding: 10px 20px; /* Padding */
+                border-radius: 5px; /* Coins arrondis */
+                text-decoration: none;
+                font-weight: bold;
+                transition: background-color 0.3s, transform 0.3s; /* Animation */
+            }
+    
+            .section-box a:hover {
+                background-color: #0056b3; /* Plus clair */
+                transform: scale(1.05); /* Agrandir légèrement */
+            }
+    
+            /* Padding global sauf bienvenue */
+            body > *:not(.hero) {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+    
+    .about-section {
+        background-color: rgba(0, 51, 102, 0.8); /* Bleu transparent */
+        color: white;
+        padding: 40px;
+        text-align: center;
+        border-radius: 20px;
+        margin: 30px; /* Padding global sauf bienvenue */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Ombre */
+        transition: transform 0.3s, background-color 0.3s; /* Animation */
+        line-height: 1.5;
+    }
+    
+    .about-section:hover {
+        transform: scale(1.02); /* Zoom léger */
+        background-color: rgba(0, 51, 102, 0.9); /* Plus foncé au survol */
+    }
+    
+    .about-section h2 {
+        font-size: 2.5em;
+        margin-bottom: 30px;
+    }
+    
+    .about-section p {
+        font-size: 1.2em;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    
+    /* Footer */
+    footer {
+        background-color: #003366;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+    }
+    
+    footer .footer-content {
+        margin-bottom: 10px;
+    }
+    
+    footer .footer-bottom p {
+        font-size: 0.9em;
+    }
+    
